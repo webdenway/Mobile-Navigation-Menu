@@ -1,0 +1,109 @@
+
+body{
+   margin: 0;
+   padding: 0;
+}
+div p ,h1{
+    padding: 1rem 2rem;
+}
+.container{
+    max-width:80rem;
+    margin: 0 auto;
+}
+
+.btn-hide{
+    display: none;
+}
+
+nav{
+    background-color: rgb(27, 173, 173);
+    width: 100%;
+    height: 6.5vh;
+
+
+
+}
+
+label{
+    /* background-color: antiquewhite;
+    padding: 1rem; */
+    display:inline-block;
+}
+span{
+    /* background-color: rgb(185, 182, 175); */
+    padding: 1rem;
+    width: 2rem;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.menu-content{
+   width: 100%;
+   height: 0;
+   transition:5s, ease-in-out;
+   position: relative;
+    background-color: rgba(0, 5, 5, 0.7);
+    /* margin-top: 10%; */
+    overflow: hidden;
+    transition: .5s ease-in-out;
+
+
+}
+
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+ a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: .5rem;
+    display: block;
+    margin: .5rem;
+
+
+}
+
+.close-icon{
+    display: none;
+}
+.btn-hide:checked ~ .menu-content{
+
+
+    width: 100%;
+    height: 93.5vh;
+
+
+
+}
+.btn-hide:checked + label .open-icon{
+    display: none;
+
+}
+.btn-hide:checked + label .close-icon{
+
+    display: block;
+}
+
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+ span i.fas:hover{
+
+    cursor: pointer;
+
+    color: aqua;
+    transform: rotate(180deg);
+    transition: .5s;
+    transform-origin: center center;
+
+}
